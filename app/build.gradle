@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.alibaba.arouter'
+// apply plugin: 'com.alibaba.arouter'
 
 android {
+    namespace 'com.alibaba.android.arouter.demo'
     compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
     buildToolsVersion BUILDTOOLS_VERSION
 
@@ -12,8 +13,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     signingConfigs {
